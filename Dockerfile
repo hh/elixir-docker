@@ -8,3 +8,8 @@ WORKDIR /tmp/elixir
 RUN git checkout v0.12.5
 RUN make install
 RUN rm -rf /tmp/elixir
+
+RUN apt-get remove -y build-essential
+RUN apt-get autoremove -y
+RUN apt-get clean
+RUN apt-get autoclean
