@@ -1,6 +1,7 @@
 FROM adbl/erlang:r16b03-1
 
-RUN apt-get install -y git
+RUN apt-get install -y git build-essential
+
 WORKDIR /tmp
 RUN git clone https://github.com/elixir-lang/elixir.git
 WORKDIR /tmp/elixir
