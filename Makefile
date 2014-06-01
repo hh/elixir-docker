@@ -18,4 +18,4 @@ build-$(gitsha):
 	docker build -t $(image) . |tee $@
 
 clean:
-	-rm build*
+	@rm -rf build*
