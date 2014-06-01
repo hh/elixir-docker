@@ -1,4 +1,4 @@
-DOCKER_USERNAME := adbl
+DOCKER_USERNAME := malkomalko
 DOCKER_REPOSITORY := elixir
 
 gitsha := $(shell git rev-parse --short HEAD)
@@ -18,4 +18,4 @@ build-$(gitsha):
 	docker build -t $(image) . |tee $@
 
 clean:
-	-rm $(NAME)*
+	-rm build*
