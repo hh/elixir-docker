@@ -1,5 +1,5 @@
 DOCKER_USERNAME := malkomalko
-DOCKER_REPOSITORY := elixir
+DOCKER_REPOSITORY := elixir-docker
 
 gitsha := $(shell git rev-parse --short HEAD)
 gitref := $(shell git symbolic-ref --short -q HEAD || git describe --tags)
