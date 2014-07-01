@@ -3,7 +3,7 @@ FROM stevedomin/erlang:17.0
 ENV LANG C.UTF-8
 
 RUN apt-get update
-RUN apt-get install -y build-essential git vim
+RUN apt-get install -y build-essential git vim emacs-nox
 
 WORKDIR /tmp
 RUN git clone https://github.com/elixir-lang/elixir.git
